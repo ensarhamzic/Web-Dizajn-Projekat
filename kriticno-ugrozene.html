@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>Kriticno ugrozene vrste</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/noframework.waypoints.min.js"></script>
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html">
+        <div id="logoDiv">
+          <img src="images/logo.png" alt="Endangered Species" />
+          <h1>Endangered Species</h1>
+        </div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+        aria-controls="navbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Početna</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="kriticno-ugrozene.html"
+              >Kritično ugrožene</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ugrozene.html">Ugrožene</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ranjive.html">Ranjive</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="banner">
+      <div id="headline">
+        <h2>Životinje su u opasnosti!</h2>
+        <button id="readMoreBtn">
+          Pročitaj više&nbsp;&nbsp;&nbsp;<i
+            class="fas fa-angle-double-down"
+          ></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="intro">
+      <p>
+        Ugrožene vrste su vrste za koje postoji velika verovatnoća da će
+        izumreti u bliskoj budućnosti, bilo širom sveta ili u određenoj
+        političkoj jurisdikciji. Na Crvenoj listi IUCN-a sada se nalazi 41.415
+        vrsta, a 16.306 od njih su ugrožene vrste kojima preti izumiranje.
+      </p>
+      <p>
+        Gubitak čak samo jedne vrste može imati katastrofalne uticaje na ostatak
+        ekosistema, jer će se efekti osetiti u celom lancu ishrane. Od pružanja
+        lekova za smrtonosne bolesti do održavanja prirodnih ekosistema i
+        poboljšanja ukupnog kvaliteta života, prednosti očuvanja ugroženih i
+        ugroženih vrsta su neprocenjive.
+      </p>
+    </div>
+
+    <div id="counterDiv">
+      <div>
+        <div class="value" akhi="41415">0</div>
+        <p>UGROŽENIH VRSTA</p>
+      </div>
+      <div>
+        <div class="value" akhi="16306">0</div>
+        <p>VRSTA KOJIMA PRETI IZUMIRANJE</p>
+      </div>
+    </div>
+
+    <div id="kinds">
+      <h1>Podela ugroženih životinja</h1>
+      <div id="cards">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="images/critically-endagered.jpg"
+                alt="Kritično ugrožene"
+              />
+              <h3>Kritično ugrožene</h3>
+            </div>
+            <div class="flip-card-back">
+              <h1>Kritično ugrožene životinjske vrste</h1>
+              <p>
+                Vrste za koje se smatra da su suočene sa ekstremno visokim
+                rizikom od izumiranja u divljini.
+              </p>
+              <a href="kriticno-ugrozene.html">Pročitaj više</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/endangered.jpg" alt="Ugrožene" />
+              <h3>Ugrožene</h3>
+            </div>
+            <div class="flip-card-back">
+              <h1>Ugrožene životinjske vrste</h1>
+              <p>
+                Vrste za koje se smatra da su suočene sa veoma visokim rizikom
+                od izumiranja u divljini.
+              </p>
+              <a href="ugrozene.html">Pročitaj više</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/vulnerable.jpg" alt="Ranjive" />
+              <h3>Ranjive</h3>
+            </div>
+            <div class="flip-card-back">
+              <h1>Ranjive životinjske vrste</h1>
+              <p>
+                Vrste za koje se smatra da su suočene sa visokim rizikom od
+                izumiranja u divljini.
+              </p>
+              <a href="ranjive.html">Pročitaj više</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div id="social">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+      <p>Endangered Species &copy; 2022</p>
+    </footer>
+  </body>
+</html>
