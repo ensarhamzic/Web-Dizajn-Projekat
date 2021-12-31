@@ -279,3 +279,55 @@ footer p {
   color: #f47621;
   -webkit-text-stroke: 1px black;
 }
+
+#critically-endangered {
+  margin: 50px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  text-align: center;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.right {
+  margin-left: 25px;
+  font-size: 1.2rem;
+}
+
+.characteristic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.characteristic div:first-child {
+  width: 50px;
+}
+
+.characteristic p:last-child {
+  font-weight: bold;
+}
+
+.characteristic i {
+  font-size: 2.7rem;
+  color: gray;
+}
+
+.characteristic p {
+  margin: 0;
+}
+
+.species {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
