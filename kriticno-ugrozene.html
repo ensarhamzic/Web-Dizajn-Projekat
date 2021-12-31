@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="css/all.css" />
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/noframework.waypoints.min.js"></script>
-    <script src="js/app.js" defer></script>
+    <script src="js/critical.js" defer></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -56,101 +55,38 @@
         </ul>
       </div>
     </nav>
-    <div id="banner">
-      <div id="headline">
-        <h2>Životinje su u opasnosti!</h2>
+    <div id="banner" class="criticalBanner">
+      <img src="images/critically-endangered/banner.jpg" alt="Banner" />
+      <div class="headline" id="headline_critical">
+        <h2>Kritično ugrožene vrste</h2>
         <button id="readMoreBtn">
-          Pročitaj više&nbsp;&nbsp;&nbsp;<i
-            class="fas fa-angle-double-down"
-          ></i>
+          Vidi više&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-double-down"></i>
         </button>
       </div>
     </div>
 
     <div id="intro">
       <p>
-        Ugrožene vrste su vrste za koje postoji velika verovatnoća da će
-        izumreti u bliskoj budućnosti, bilo širom sveta ili u određenoj
-        političkoj jurisdikciji. Na Crvenoj listi IUCN-a sada se nalazi 41.415
-        vrsta, a 16.306 od njih su ugrožene vrste kojima preti izumiranje.
+        IUCN crvena lista kritično ugroženih vrsta je ona koju je Međunarodna
+        unija za očuvanje prirode kategorisala kao suočena sa izuzetno visokim
+        rizikom od izumiranja u divljini. U 2021. godini, od 120.372 vrsta koje
+        trenutno prati IUCN, postoje 8.404 vrste koje se smatraju kritično
+        ugroženim.
       </p>
       <p>
-        Gubitak čak samo jedne vrste može imati katastrofalne uticaje na ostatak
-        ekosistema, jer će se efekti osetiti u celom lancu ishrane. Od pružanja
-        lekova za smrtonosne bolesti do održavanja prirodnih ekosistema i
-        poboljšanja ukupnog kvaliteta života, prednosti očuvanja ugroženih i
-        ugroženih vrsta su neprocenjive.
+        IUCN Crvena lista pruža javnosti informacije o statusu očuvanosti
+        životinjskih, gljivičnih i biljnih vrsta. Ona deli različite vrste u
+        sedam različitih kategorija zaštite koje se zasnivaju na opsegu
+        staništa, veličini populacije, staništu, pretnjama, itd. Svaka
+        kategorija predstavlja različit nivo globalnog rizika od izumiranja.
+        Vrste koje se smatraju kritično ugroženim stavljaju se u kategoriju
+        „ugroženih“.
       </p>
-    </div>
-
-    <div id="counterDiv">
-      <div>
-        <div class="value" akhi="41415">0</div>
-        <p>UGROŽENIH VRSTA</p>
-      </div>
-      <div>
-        <div class="value" akhi="16306">0</div>
-        <p>VRSTA KOJIMA PRETI IZUMIRANJE</p>
-      </div>
-    </div>
-
-    <div id="kinds">
-      <h1>Podela ugroženih životinja</h1>
-      <div id="cards">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img
-                src="images/critically-endagered.jpg"
-                alt="Kritično ugrožene"
-              />
-              <h3>Kritično ugrožene</h3>
-            </div>
-            <div class="flip-card-back">
-              <h1>Kritično ugrožene životinjske vrste</h1>
-              <p>
-                Vrste za koje se smatra da su suočene sa ekstremno visokim
-                rizikom od izumiranja u divljini.
-              </p>
-              <a href="kriticno-ugrozene.html">Pročitaj više</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/endangered.jpg" alt="Ugrožene" />
-              <h3>Ugrožene</h3>
-            </div>
-            <div class="flip-card-back">
-              <h1>Ugrožene životinjske vrste</h1>
-              <p>
-                Vrste za koje se smatra da su suočene sa veoma visokim rizikom
-                od izumiranja u divljini.
-              </p>
-              <a href="ugrozene.html">Pročitaj više</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/vulnerable.jpg" alt="Ranjive" />
-              <h3>Ranjive</h3>
-            </div>
-            <div class="flip-card-back">
-              <h1>Ranjive životinjske vrste</h1>
-              <p>
-                Vrste za koje se smatra da su suočene sa visokim rizikom od
-                izumiranja u divljini.
-              </p>
-              <a href="ranjive.html">Pročitaj više</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <p>
+        Pošto IUCN Crvena lista ne smatra da je vrsta izumrla dok se ne sprovedu
+        opsežna, ciljana istraživanja, vrste koje su možda izumrle su i dalje
+        navedene kao kritično ugrožene.
+      </p>
     </div>
 
     <footer>
