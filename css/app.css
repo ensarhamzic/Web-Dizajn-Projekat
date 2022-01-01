@@ -282,14 +282,14 @@ footer p {
 
 #critically-endangered {
   margin: 50px 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .left {
   text-align: center;
+}
+
+.left img {
+  height: 400px;
 }
 
 .middle {
@@ -299,7 +299,7 @@ footer p {
 }
 
 .right {
-  margin-left: 25px;
+  margin-left: 15px;
   font-size: 1.2rem;
 }
 
@@ -311,6 +311,12 @@ footer p {
 
 .characteristic div:first-child {
   width: 50px;
+  text-align: center;
+}
+
+.characteristic div:nth-child(2) {
+  width: 150px;
+  margin-left: 15px;
 }
 
 .characteristic p:last-child {
@@ -318,7 +324,7 @@ footer p {
 }
 
 .characteristic i {
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   color: gray;
 }
 
