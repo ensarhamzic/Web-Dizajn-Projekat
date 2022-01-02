@@ -4,7 +4,459 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>Ranjive vrste</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/critical.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html">
+        <div id="logoDiv">
+          <img src="images/logo.png" alt="Endangered Species" />
+          <h1>Endangered Species</h1>
+        </div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+        aria-controls="navbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Početna</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kriticno-ugrozene.html"
+              >Kritično ugrožene</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ugrozene.html">Ugrožene</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="ranjive.html">Ranjive</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="banner" class="criticalBanner">
+      <img src="images/vulnerable/banner.jpg" alt="Banner" />
+      <div class="headline" id="headline_critical">
+        <h2>Ranjive vrste</h2>
+        <button id="readMoreBtn">
+          Vidi više&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-double-down"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="intro">
+      <p>
+        Ugrožena vrsta je vrsta koju je kategorisala Međunarodna unija za
+        zaštitu prirode kojoj preti izumiranje osim ako se ne poprave okolnosti
+        koje ugrožavaju njen opstanak i reprodukciju.
+      </p>
+      <p>
+        Ranjivost je uglavnom uzrokovana gubitkom staništa ili uništavanjem doma
+        vrste. Ranjiva staništa ili vrste se prate i mogu postati sve
+        ugroženije. Neke vrste koje su navedene kao „ranjive“ mogu biti
+        uobičajene u zatočeništvu, na primer vojna ara.
+      </p>
+      <p>
+        Trenutno postoji 5196 životinja i 6789 biljaka koje su klasifikovane kao
+        ugrožene, u poređenju sa nivoima iz 1998. od 2815 i 3222, respektivno.
+        Prakse kao što je kriokonzervacija životinjskih genetičkih resursa su
+        primenjene u nastojanjima da se očuvaju posebno ranjive rase stoke.
+      </p>
+      <p>
+        Održavanje biodiverziteta može uticati na naš opstanak kao vrste, pošto
+        se malo zna o međuzavisnosti vrsta i životne sredine. Postoje i
+        potencijalne ekonomske koristi u održavanju populacija divljih životinja
+        i biljaka. Ugrožene vrste zahtevaju aktivnu intervenciju za uklanjanje
+        ili ublažavanje nepovoljnih okolnosti koje ih dovode u opasnost kako bi
+        se održali zdravi ekosistemi i sprečilo dalje izumiranje vrsta.
+      </p>
+    </div>
+
+    <div id="critically-endangered">
+      <h2>Neke od vrsta ove kategorije</h2>
+      <div class="species">
+        <div class="left">
+          <h3>Snežni leopard</h3>
+          <div id="leopard" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="d-block"
+                  src="images/vulnerable/leopard1.jpg"
+                  alt="First slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block"
+                  src="images/vulnerable/leopard2.jpg"
+                  alt="Second slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block"
+                  src="images/vulnerable/leopard3.jpg"
+                  alt="Third slide"
+                />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#leopard"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#leopard"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="middle">
+          <div class="characteristic">
+            <div>
+              <i class="fas fa-atlas"></i>
+            </div>
+            <div>
+              <p>Naucno ime</p>
+              <p>Panthera uncia</p>
+            </div>
+          </div>
+          <div class="characteristic">
+            <div>
+              <i class="fas fa-globe-europe"></i>
+            </div>
+            <div>
+              <p>Populacija</p>
+              <p>4.000 - 6.500</p>
+            </div>
+          </div>
+          <div class="characteristic">
+            <div>
+              <i class="fas fa-ruler-horizontal"></i>
+            </div>
+            <div>
+              <p>Dužina</p>
+              <p>0.6 - 1.5m</p>
+            </div>
+          </div>
+          <div class="characteristic">
+            <div>
+              <i class="fas fa-weight"></i>
+            </div>
+            <div>
+              <p>Težina</p>
+              <p>27 - 55kg</p>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <p>
+            Snažna građa snežnog leoparda omogućava mu da se s lakoćom penje na
+            velike strme padine. Njegove zadnje noge daju snežnom leopardu
+            mogućnost da skoči šest puta dužinu svog tela. Dugačak rep omogućava
+            okretnost, obezbeđuje ravnotežu i obavija snežnog leoparda koji se
+            odmara kao zaštitu od hladnoće.
+          </p>
+          <p>
+            Milenijumima je ova veličanstvena mačka bila kralj planina. Planine
+            su bile bogate svojim plenom kao što su plave ovce, argalske divlje
+            ovce, kozorogi, marmoti, pike i zečevi. Raspon staništa snežnog
+            leoparda proteže se kroz planinske regione 12 zemalja širom Azije:
+            Avganistan, Butan, Kina, Indija, Kazahstan, Kirgistanska Republika,
+            Mongolija, Nepal, Pakistan, Rusija, Tadžikistan i Uzbekistan.
+          </p>
+          <p>
+            Ukupan raspon pokriva površinu od blizu 772.204 kvadratnih milja, sa
+            60% staništa u Kini. Međutim, više od 70% staništa snežnog leoparda
+            ostaje neistraženo. Veličine kućnog asortimana mogu varirati od
+            4,6-15,4 kvadratnih milja u Nepalu do preko 193 kvadratnih milja u
+            Mongoliji. Gustina populacije može da se kreće od 0,1 do 10 ili više
+            jedinki na 38,6 kvadratnih milja, u zavisnosti od gustine plena i
+            kvaliteta staništa. Ipak, populacija snežnog leoparda vrlo verovatno
+            opada.
+          </p>
+        </div>
+      </div>
+
+      <div class="species">
+        <div class="right">
+          <p>
+            Najveći medved na svetu i najveći predator Arktika, polarni medvedi
+            su moćan simbol snage i izdržljivosti Arktika. Latinsko ime polarnog
+            medveda, Ursus maritimus, znači „morski medved“. To je prikladno ime
+            za ovu veličanstvenu vrstu, koja veći deo svog života provodi u, oko
+            ili na okeanu – pretežno na morskom ledu. U Sjedinjenim Državama,
+            Aljaska je dom dve subpopulacije polarnih medveda.
+          </p>
+          <p>
+            Polarni medvedi, koji se smatraju talentovanim plivačima, mogu da
+            izdrže tempo od 9 km na sat veslajući prednjim šapama i držeći
+            zadnje noge ravnim kao kormilo. Imaju debeli sloj telesne masti i
+            vodoodbojni sloj koji ih izoluje od hladnog vazduha i vode. Polarni
+            medvedi provode preko 50% svog vremena u potrazi za hranom. Polarni
+            medved može uloviti samo jednu ili dve od 10 foka koje lovi, u
+            zavisnosti od doba godine i drugih varijabli. Njihova ishrana se
+            uglavnom sastoji od prstenastih i bradatih foka jer su im potrebne
+            velike količine masti da bi preživele.
+          </p>
+        </div>
+        <div class="middle">
+          <div class="characteristic">
+            <div>
+              <i class="fas fa-atlas"></i>
+            </div>
+            <div>
+              <p>Naucno ime</p>
+              <p>Ursus maritimus</p>
+            </div>
+          </div>
+          <div class="characteristic">
+            <div>
+              <i class="fas fa-globe-europe"></i>
+            </div>
+            <div>
+              <p>Populacija</p>
+              <p>22.000 - 31.000</p>
+            </div>
+          </div>
+          <div class="characteristic">
+            <div>
+              <i class="fas fa-ruler-horizontal"></i>
+            </div>
+            <div>
+              <p>Dužina</p>
+              <p>1.8 - 2.7m</p>
+            </div>
+          </div>
+          <div class="characteristic">
+            <div>
+              <i class="fas fa-weight"></i>
+            </div>
+            <div>
+              <p>Težina</p>
+              <p>130 - 590kg</p>
+            </div>
+          </div>
+        </div>
+        <div class="left">
+          <h3>Polarni Medved</h3>
+          <div id="dolphin" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="d-block"
+                  src="images/endangered/dolphin1.jpg"
+                  alt="First slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block"
+                  src="images/endangered/dolphin2.jpg"
+                  alt="Second slide"
+                />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#dolphin"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#dolphin"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="species">
+        <div class="left">
+          <h3>Indijski nosorog</h3>
+          <div id="rhino" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="d-block"
+                  src="images/vulnerable/rhino1.jpg"
+                  alt="First slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block"
+                  src="images/vulnerable/rhino2.jpg"
+                  alt="Second slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block"
+                  src="images/vulnerable/rhino3.jpg"
+                  alt="Third slide"
+                />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#rhino"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#rhino"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="middle">
+          <div class="characteristic">
+            <div>
+              <i class="fas fa-atlas"></i>
+            </div>
+            <div>
+              <p>Naucno ime</p>
+              <p>Rhinoceros unicornis</p>
+            </div>
+          </div>
+          <div class="characteristic">
+            <div>
+              <i class="fas fa-globe-europe"></i>
+            </div>
+            <div>
+              <p>Populacija</p>
+              <p>3700</p>
+            </div>
+          </div>
+          <div class="characteristic">
+            <div>
+              <i class="fas fa-arrows-alt-v"></i>
+            </div>
+            <div>
+              <p>Visina</p>
+              <p>1.7 - 2.0m</p>
+            </div>
+          </div>
+          <div class="characteristic">
+            <div>
+              <i class="fas fa-ruler-horizontal"></i>
+            </div>
+            <div>
+              <p>Dužina</p>
+              <p>3.0 - 3.8m</p>
+            </div>
+          </div>
+          <div class="characteristic">
+            <div>
+              <i class="fas fa-weight"></i>
+            </div>
+            <div>
+              <p>Težina</p>
+              <p>1800 - 2700kg</p>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <p>
+            Veći jednorogi nosorog (ili „indijski nosorog“) je najveća vrsta
+            nosoroga. Nekada široko rasprostranjena po celom severnom delu
+            indijskog potkontinenta, populacija nosoroga je opala jer su ih
+            lovili radi sporta ili ubijali kao poljoprivredne štetočine. Ovo je
+            gurnulo ovu vrstu blizu izumiranja i do početka 20. veka ostalo je
+            oko 200 divljih većih jednorogih nosoroga. Oporavak većeg jednorogog
+            nosoroga jedna je od najvećih priča o uspehu očuvanja u Aziji.
+            Zahvaljujući strogoj zaštiti i upravljanju od strane indijskih i
+            nepalskih vlasti za divlje životinje, veći jednorogi nosorog je
+            vraćen sa ivice. Danas se populacija povećala na oko 3.700 nosoroga
+            u severoistočnoj Indiji i na travnjacima Terai u Nepalu.
+          </p>
+          <p>
+            Veći jednorogi nosorog se identifikuje po jednom crnom rogu dužine
+            od 20 do 63 centimetra i sivo-braon koži sa naborima kože, što mu
+            daje oklopni izgled. Vrsta je usamljena, osim kada se odrasli
+            mužjaci ili nosorozi koji se približavaju odraslom dobu okupljaju u
+            kopovima ili na ispaši. Mužjaci imaju labavo definisana domaća
+            područja koja nisu dobro zaštićena i često se preklapaju. Oni
+            prvenstveno pasu, sa ishranom koja se skoro u potpunosti sastoji od
+            trave, kao i lišća, grana žbunja i drveća, voća i vodenih biljaka.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div id="social">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+      <p>Endangered Species &copy; 2022</p>
+    </footer>
+  </body>
 </html>
