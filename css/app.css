@@ -20,7 +20,7 @@ nav {
 
 #logoDiv h1 {
   margin-left: 20px;
-  font-size: 33px;
+  font-size: 2.1rem;
   color: #f47621;
 }
 
@@ -168,6 +168,7 @@ nav {
 
 #cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -226,7 +227,7 @@ footer {
 
 footer p {
   margin: 0;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -241,6 +242,7 @@ footer p {
   font-size: 2.3rem;
   color: white;
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   padding: 70px;
   background: #f47621;
@@ -341,4 +343,91 @@ footer p {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+@media only screen and (max-width: 1999px) {
+  .flip-card {
+    margin-top: 30px;
+  }
+
+  #banner_home {
+    height: 800px;
+  }
+
+  #headline_home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #intro {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #logoDiv img {
+    width: 50px;
+  }
+
+  #logoDiv h1 {
+    font-size: 1.6rem;
+  }
+
+  nav {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  footer {
+    display: block;
+    padding: 0 50px !important;
+  }
+
+  footer > div {
+    margin: auto;
+    text-align: center;
+  }
+
+  #banner_home {
+    background-position: center;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #counterDiv {
+    font-size: 1.8rem;
+  }
+
+  #counterDiv .value {
+    font-size: 3.5rem;
+  }
+
+  #banner_home {
+    background-position: center;
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #logoDiv img {
+    width: 70px;
+  }
+  #logoDiv h1 {
+    display: none;
+  }
+
+  .flip-card {
+    width: 320px;
+    height: 420px;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
 }
