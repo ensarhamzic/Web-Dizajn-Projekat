@@ -48,10 +48,35 @@ nav {
   margin-left: 25px;
 }
 
-/* HomePage */
-
 #banner_home {
   background: url(../images/slon.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  position: relative;
+}
+
+#banner_critical {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/critically-endangered/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  position: relative;
+}
+
+#banner_vulnerable {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/vulnerable/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  position: relative;
+}
+
+#banner_endangered {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/endangered/banner.jpg);
   background-position: center;
   background-size: cover;
   height: 800px;
@@ -263,11 +288,6 @@ footer p {
   overflow: hidden;
 }
 
-.criticalBanner img {
-  object-fit: cover;
-  opacity: 0.7;
-}
-
 #headline_critical {
   position: absolute;
   top: 50%;
@@ -341,17 +361,18 @@ footer p {
 
 .species {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  flex-direction: row;
+}
+
+.species:nth-child(3) {
+  flex-direction: row-reverse;
 }
 
 @media only screen and (max-width: 1999px) {
   .flip-card {
     margin-top: 30px;
-  }
-
-  #banner_home {
-    height: 800px;
   }
 
   #headline_home {
@@ -363,9 +384,41 @@ footer p {
   }
 }
 
+@media only screen and (max-width: 1300px) {
+  .species {
+    flex-direction: row !important;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .left {
+    margin-bottom: 20px;
+  }
+
+  .middle {
+    margin-bottom: 20px;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   #intro {
     width: 85%;
+  }
+
+  footer {
+    display: block;
+    padding: 0 50px !important;
+  }
+
+  footer > div {
+    margin: auto;
+    text-align: center;
+  }
+
+  #banner_critical,
+  #banner_endangered,
+  #banner_vulnerable {
+    height: 600px;
   }
 }
 
@@ -383,19 +436,31 @@ footer p {
     padding-right: 1rem !important;
   }
 
-  footer {
-    display: block;
-    padding: 0 50px !important;
-  }
-
-  footer > div {
-    margin: auto;
-    text-align: center;
-  }
-
   #banner_home {
     background-position: center;
     height: 600px;
+  }
+
+  #banner_critical,
+  #banner_endangered,
+  #banner_vulnerable {
+    height: 500px;
+  }
+
+  .right p {
+    width: 500px;
+  }
+
+  #critically-endangered h2 {
+    display: none;
+  }
+
+  .criticalBanner {
+    height: 600px;
+  }
+
+  .criticalBanner img {
+    transform: scaleX(-1);
   }
 }
 
@@ -411,6 +476,20 @@ footer p {
   #banner_home {
     background-position: center;
     height: 500px;
+  }
+
+  #banner_critical,
+  #banner_endangered,
+  #banner_vulnerable {
+    height: 400px;
+  }
+
+  .right p {
+    width: 420px;
+  }
+
+  #headline_critical h2 {
+    font-size: 3rem;
   }
 }
 
@@ -429,5 +508,9 @@ footer p {
 
   footer p {
     font-size: 1rem;
+  }
+
+  .right p {
+    width: 320px;
   }
 }
