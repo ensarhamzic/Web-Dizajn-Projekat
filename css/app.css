@@ -370,6 +370,15 @@ footer p {
   flex-direction: row-reverse;
 }
 
+#submit {
+  font-weight: bold;
+}
+
+#submit:hover {
+  background: #f47621;
+  color: white;
+}
+
 @media only screen and (max-width: 1999px) {
   .flip-card {
     margin-top: 30px;
