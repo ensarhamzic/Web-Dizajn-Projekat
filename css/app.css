@@ -385,6 +385,44 @@ footer p {
   margin-left: 20px;
 }
 
+.req {
+  display: none;
+}
+
+.formError {
+  color: red;
+}
+
+#the-count {
+  float: right;
+  padding: 0.1rem 0 0 0;
+  font-size: 0.875rem;
+}
+
+#contactDiv {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#success {
+  color: #5eb801;
+  margin: 0;
+  min-height: 80vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.huge {
+  font-size: 20rem;
+  margin: 0;
+}
+
 @media only screen and (max-width: 1999px) {
   .flip-card {
     margin-top: 30px;
@@ -485,6 +523,16 @@ footer p {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .huge {
+    font-size: 15rem;
+  }
+
+  #success h1 {
+    font-size: 1.8rem;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   #counterDiv {
     font-size: 1.8rem;
@@ -533,5 +581,13 @@ footer p {
 
   .right p {
     width: 320px;
+  }
+
+  .huge {
+    font-size: 12rem;
+  }
+
+  #success h1 {
+    font-size: 1.4rem;
   }
 }

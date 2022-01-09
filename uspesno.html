@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>Uspesno</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/noframework.waypoints.min.js"></script>
+    <script src="js/uspesno.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl navbar-light">
+      <a class="navbar-brand" href="index.html">
+        <div id="logoDiv">
+          <img src="images/logo.png" alt="Endangered Species" />
+          <h1>Endangered Species</h1>
+        </div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+        aria-controls="navbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Početna</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kriticno-ugrozene.html"
+              >Kritično ugrožene</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ugrozene.html">Ugrožene</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ranjive.html">Ranjive</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="success" class="content mt-5">
+      <div class="container">
+        <div id="povratak">
+          <h3>Povratak nazad za <span id="timer">5</span></h3>
+        </div>
+        <div class="huge">
+          <i class="far fa-envelope"></i>
+        </div>
+        <h1>Poruka uspesno poslata <i class="far fa-paper-plane"></i></h1>
+      </div>
+    </div>
+
+    <footer>
+      <div id="social">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+      <div><p>Endangered Species &copy; Copyright 2022</p></div>
+    </footer>
+  </body>
+</html>
