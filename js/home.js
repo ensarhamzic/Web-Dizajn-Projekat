@@ -35,3 +35,43 @@ $(document).ready(function () {
     );
   });
 });
+
+let theme = document.querySelector("#theme a");
+let navLinks = document.querySelectorAll("#navbar li");
+let cards = document.querySelectorAll(".flip-card-back");
+let body = document.querySelector("body");
+
+const darkToggler = () => {
+  if (body.classList.contains("dark")) {
+    body.classList.remove("dark");
+    navLinks.forEach((navLink) => {
+      navLink.classList.remove("darkLink");
+    });
+    cards.forEach((card) => {
+      card.classList.remove("darkCard");
+    });
+
+    theme.classList.add("rotateIcon");
+    setTimeout(() => {
+      theme.classList.remove("rotateIcon");
+    }, 700);
+  } else {
+    body.classList.add("dark");
+    navLinks.forEach((navLink) => {
+      navLink.classList.add("darkLink");
+    });
+    cards.forEach((card) => {
+      card.classList.add("darkCard");
+    });
+
+    theme.classList.add("rotateIcon");
+    setTimeout(() => {
+      theme.classList.remove("rotateIcon");
+    }, 700);
+  }
+};
+
+theme.addEventListener("click", (e) => {
+  e.preventDefault();
+  darkToggler();
+});

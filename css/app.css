@@ -2,10 +2,32 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  transition: 0.5s;
+}
+
 nav {
   padding-left: 50px !important;
   padding-right: 50px !important;
   border-bottom: 5px solid #f47621;
+}
+
+.dark {
+  color: white !important;
+  background-color: rgb(32, 33, 36) !important;
+}
+
+.darkLink a:active,
+.darkLink a:visited {
+  color: white !important;
+}
+
+.darkCard {
+  background-color: rgb(32, 33, 36) !important;
+}
+
+.darkCharacteristics i {
+  color: rgb(221, 221, 221) !important;
 }
 
 #logoDiv {
@@ -24,7 +46,10 @@ nav {
   color: #f47621;
 }
 
-.active a {
+.active a:link,
+.active a:visited,
+.active a:hover,
+.active a:active {
   color: #5eb801 !important;
   font-weight: bold;
 }
@@ -37,11 +62,11 @@ nav {
 }
 
 #navbar li a:hover {
-  color: #5eb801;
+  color: #5eb801 !important;
 }
 
 #navbar li a:active {
-  color: gray;
+  color: gray !important;
 }
 
 #navbar li {
@@ -589,5 +614,21 @@ footer p {
 
   #success h1 {
     font-size: 1.4rem;
+  }
+}
+
+.rotateIcon {
+  animation: rotate 0.7s linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
