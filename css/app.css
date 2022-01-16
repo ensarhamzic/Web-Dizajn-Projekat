@@ -462,6 +462,20 @@ footer p {
   }
 }
 
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+  .navbar {
+    display: block !important;
+  }
+
+  #logoDiv {
+    width: 100vw;
+  }
+
+  #navbar .navbar-nav {
+    margin: 0 auto;
+  }
+}
+
 @media only screen and (max-width: 1300px) {
   .species {
     flex-direction: row !important;
