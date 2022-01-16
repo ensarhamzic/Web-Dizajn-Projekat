@@ -98,3 +98,41 @@ $("textarea").keyup(function () {
     theCount.css("font-weight", "normal");
   }
 });
+
+let theme = document.querySelector("#theme a");
+let navLinks = document.querySelectorAll("#navbar li");
+let body = document.querySelector("body");
+let moonIcon = document.querySelector(".fa-moon");
+
+const darkToggler = () => {
+  if (body.classList.contains("dark")) {
+    body.classList.remove("dark");
+    navLinks.forEach((navLink) => {
+      navLink.classList.remove("darkLink");
+    });
+
+    theme.classList.add("rotateIcon");
+    moonIcon.style.color = "black";
+
+    setTimeout(() => {
+      theme.classList.remove("rotateIcon");
+    }, 700);
+  } else {
+    body.classList.add("dark");
+    navLinks.forEach((navLink) => {
+      navLink.classList.add("darkLink");
+    });
+
+    theme.classList.add("rotateIcon");
+    moonIcon.style.color = "white";
+
+    setTimeout(() => {
+      theme.classList.remove("rotateIcon");
+    }, 700);
+  }
+};
+
+theme.addEventListener("click", (e) => {
+  e.preventDefault();
+  darkToggler();
+});

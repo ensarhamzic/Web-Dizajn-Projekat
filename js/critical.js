@@ -14,6 +14,8 @@ let theme = document.querySelector("#theme a");
 let navLinks = document.querySelectorAll("#navbar li");
 let body = document.querySelector("body");
 let characteristics = document.querySelectorAll(".characteristic");
+let moonIcon = document.querySelector(".fa-moon");
+
 const darkToggler = () => {
   if (body.classList.contains("dark")) {
     body.classList.remove("dark");
@@ -25,6 +27,8 @@ const darkToggler = () => {
     });
 
     theme.classList.add("rotateIcon");
+    moonIcon.style.color = "black";
+
     setTimeout(() => {
       theme.classList.remove("rotateIcon");
     }, 700);
@@ -38,6 +42,8 @@ const darkToggler = () => {
     });
 
     theme.classList.add("rotateIcon");
+    moonIcon.style.color = "white";
+
     setTimeout(() => {
       theme.classList.remove("rotateIcon");
     }, 700);

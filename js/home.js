@@ -40,6 +40,7 @@ let theme = document.querySelector("#theme a");
 let navLinks = document.querySelectorAll("#navbar li");
 let cards = document.querySelectorAll(".flip-card-back");
 let body = document.querySelector("body");
+let moonIcon = document.querySelector(".fa-moon");
 
 const darkToggler = () => {
   if (body.classList.contains("dark")) {
@@ -52,6 +53,8 @@ const darkToggler = () => {
     });
 
     theme.classList.add("rotateIcon");
+    moonIcon.style.color = "black";
+
     setTimeout(() => {
       theme.classList.remove("rotateIcon");
     }, 700);
@@ -65,6 +68,8 @@ const darkToggler = () => {
     });
 
     theme.classList.add("rotateIcon");
+    moonIcon.style.color = "white";
+
     setTimeout(() => {
       theme.classList.remove("rotateIcon");
     }, 700);
