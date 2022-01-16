@@ -41,6 +41,7 @@ let navLinks = document.querySelectorAll("#navbar li");
 let cards = document.querySelectorAll(".flip-card-back");
 let body = document.querySelector("body");
 let moonIcon = document.querySelector(".fa-moon");
+let navButton = document.querySelector("#navbar-toggler");
 
 const darkToggler = () => {
   if (body.classList.contains("dark")) {
@@ -52,12 +53,15 @@ const darkToggler = () => {
       card.classList.remove("darkCard");
     });
 
-    theme.classList.add("rotateIcon");
     moonIcon.style.color = "black";
+    navButton.style.backgroundColor = "transparent";
 
-    setTimeout(() => {
-      theme.classList.remove("rotateIcon");
-    }, 700);
+    if (getComputedStyle(navButton).display == "none") {
+      theme.classList.add("rotateIcon");
+      setTimeout(() => {
+        theme.classList.remove("rotateIcon");
+      }, 700);
+    }
   } else {
     body.classList.add("dark");
     navLinks.forEach((navLink) => {
@@ -66,13 +70,15 @@ const darkToggler = () => {
     cards.forEach((card) => {
       card.classList.add("darkCard");
     });
+    navButton.style.backgroundColor = "white";
 
-    theme.classList.add("rotateIcon");
     moonIcon.style.color = "white";
-
-    setTimeout(() => {
-      theme.classList.remove("rotateIcon");
-    }, 700);
+    if (getComputedStyle(navButton).display == "none") {
+      theme.classList.add("rotateIcon");
+      setTimeout(() => {
+        theme.classList.remove("rotateIcon");
+      }, 700);
+    }
   }
 };
 

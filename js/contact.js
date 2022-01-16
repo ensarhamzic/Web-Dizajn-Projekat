@@ -103,6 +103,7 @@ let theme = document.querySelector("#theme a");
 let navLinks = document.querySelectorAll("#navbar li");
 let body = document.querySelector("body");
 let moonIcon = document.querySelector(".fa-moon");
+let navButton = document.querySelector("#navbar-toggler");
 
 const darkToggler = () => {
   if (body.classList.contains("dark")) {
@@ -111,24 +112,28 @@ const darkToggler = () => {
       navLink.classList.remove("darkLink");
     });
 
-    theme.classList.add("rotateIcon");
+    navButton.style.backgroundColor = "transparent";
     moonIcon.style.color = "black";
-
-    setTimeout(() => {
-      theme.classList.remove("rotateIcon");
-    }, 700);
+    if (getComputedStyle(navButton).display == "none") {
+      theme.classList.add("rotateIcon");
+      setTimeout(() => {
+        theme.classList.remove("rotateIcon");
+      }, 700);
+    }
   } else {
     body.classList.add("dark");
     navLinks.forEach((navLink) => {
       navLink.classList.add("darkLink");
     });
+    navButton.style.backgroundColor = "white";
 
-    theme.classList.add("rotateIcon");
     moonIcon.style.color = "white";
-
-    setTimeout(() => {
-      theme.classList.remove("rotateIcon");
-    }, 700);
+    if (getComputedStyle(navButton).display == "none") {
+      theme.classList.add("rotateIcon");
+      setTimeout(() => {
+        theme.classList.remove("rotateIcon");
+      }, 700);
+    }
   }
 };
 

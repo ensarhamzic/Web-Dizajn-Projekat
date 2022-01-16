@@ -15,6 +15,7 @@ let navLinks = document.querySelectorAll("#navbar li");
 let body = document.querySelector("body");
 let characteristics = document.querySelectorAll(".characteristic");
 let moonIcon = document.querySelector(".fa-moon");
+let navButton = document.querySelector("#navbar-toggler");
 
 const darkToggler = () => {
   if (body.classList.contains("dark")) {
@@ -25,13 +26,15 @@ const darkToggler = () => {
     characteristics.forEach((char) => {
       char.classList.remove("darkCharacteristics");
     });
+    navButton.style.backgroundColor = "transparent";
 
-    theme.classList.add("rotateIcon");
     moonIcon.style.color = "black";
-
-    setTimeout(() => {
-      theme.classList.remove("rotateIcon");
-    }, 700);
+    if (getComputedStyle(navButton).display == "none") {
+      theme.classList.add("rotateIcon");
+      setTimeout(() => {
+        theme.classList.remove("rotateIcon");
+      }, 700);
+    }
   } else {
     body.classList.add("dark");
     navLinks.forEach((navLink) => {
@@ -40,13 +43,15 @@ const darkToggler = () => {
     characteristics.forEach((char) => {
       char.classList.add("darkCharacteristics");
     });
+    navButton.style.backgroundColor = "white";
 
-    theme.classList.add("rotateIcon");
     moonIcon.style.color = "white";
-
-    setTimeout(() => {
-      theme.classList.remove("rotateIcon");
-    }, 700);
+    if (getComputedStyle(navButton).display == "none") {
+      theme.classList.add("rotateIcon");
+      setTimeout(() => {
+        theme.classList.remove("rotateIcon");
+      }, 700);
+    }
   }
 };
 
