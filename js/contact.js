@@ -7,6 +7,8 @@ const fokusiranje = (x, focus = true) => {
   }
 };
 
+let title = document.title;
+
 let nameErr = document.querySelector("#nameErr");
 let surnameErr = document.querySelector("#surnameErr");
 let emailErr = document.querySelector("#emailErr");
@@ -36,7 +38,7 @@ form.addEventListener("submit", (e) => {
     name.value[0] !== name.value[0].toUpperCase()
   ) {
     let p = document.createElement("p");
-    p.innerHTML = "Netacno uneti podaci";
+    p.innerHTML = title == "Contact" ? "Invalid data" : "Netacno uneti podaci";
     nameErr.append(p);
     name.style.background = "rgba(233, 71, 71, 0.8)";
     err++;
@@ -48,7 +50,7 @@ form.addEventListener("submit", (e) => {
     surname.value[0] !== surname.value[0].toUpperCase()
   ) {
     let p = document.createElement("p");
-    p.innerHTML = "Netacno uneti podaci";
+    p.innerHTML = title == "Contact" ? "Invalid data" : "Netacno uneti podaci";
     surnameErr.append(p);
     surname.style.background = "rgba(233, 71, 71, 0.8)";
     err++;
@@ -62,7 +64,7 @@ form.addEventListener("submit", (e) => {
       )
   ) {
     let p = document.createElement("p");
-    p.innerHTML = "Netacno uneti podaci";
+    p.innerHTML = title == "Contact" ? "Invalid data" : "Netacno uneti podaci";
     emailErr.append(p);
     email.style.background = "rgba(233, 71, 71, 0.8)";
     err++;
@@ -70,14 +72,14 @@ form.addEventListener("submit", (e) => {
 
   if (message.value.length < 30 || message.value.length > 1000) {
     let p = document.createElement("p");
-    p.innerHTML = "Netacno uneti podaci";
+    p.innerHTML = title == "Contact" ? "Invalid data" : "Netacno uneti podaci";
     messageErr.append(p);
     message.style.background = "rgba(233, 71, 71, 0.8)";
     err++;
   }
 
   if (err == 0) {
-    window.location.href = "uspesno.html";
+    window.location.href = title == "Contact" ? "success.html" : "uspesno.html";
   }
 });
 
@@ -105,8 +107,25 @@ let body = document.querySelector("body");
 let moonIcon = document.querySelector(".fa-moon");
 let navButton = document.querySelector("#navbar-toggler");
 
+function getCookie(cookieName) {
+  let cookie = {};
+  document.cookie.split(";").forEach(function (el) {
+    let [key, value] = el.split("=");
+    cookie[key.trim()] = value;
+  });
+  return cookie[cookieName];
+}
+
+let darkMode = getCookie("darkMode");
+window.onload = () => {
+  if (darkMode == 1) {
+    darkToggler();
+  }
+};
+
 const darkToggler = () => {
   if (body.classList.contains("dark")) {
+    document.cookie = "darkMode=0";
     body.classList.remove("dark");
     navLinks.forEach((navLink) => {
       navLink.classList.remove("darkLink");
@@ -121,6 +140,7 @@ const darkToggler = () => {
       }, 700);
     }
   } else {
+    document.cookie = "darkMode=1";
     body.classList.add("dark");
     navLinks.forEach((navLink) => {
       navLink.classList.add("darkLink");

@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 nav {
@@ -17,7 +17,7 @@ nav {
   background-color: rgb(32, 33, 36) !important;
 }
 
-.darkLink a:active,
+.darkLink a:link,
 .darkLink a:visited {
   color: white !important;
 }

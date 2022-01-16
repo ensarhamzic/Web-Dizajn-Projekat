@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="favicon.png" />
-    <title>Kontakt</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/all.css" />
@@ -16,7 +16,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-xl navbar-light">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="index-en.html">
         <div id="logoDiv">
           <img src="images/logo.png" alt="Endangered Species" />
           <h1>Endangered Species</h1>
@@ -38,24 +38,24 @@
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Početna</a>
+            <a class="nav-link" href="index-en.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="kriticno-ugrozene.html"
-              >Kritično ugrožene</a
+            <a class="nav-link" href="critically-endangered.html"
+              >Critically endangered</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="ugrozene.html">Ugrožene</a>
+            <a class="nav-link" href="endangered.html">Endangered</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="ranjive.html">Ranjive</a>
+            <a class="nav-link" href="vulnerable.html">Vulnerable</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="kontakt.html">Kontakt</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html"><b>SR</b>/EN</a>
+            <a class="nav-link" href="kontakt.html">SR/<b>EN</b></a>
           </li>
           <li class="nav-item" id="theme">
             <a class="nav-link" href="#"><i class="fas fa-moon"></i></a>
@@ -69,7 +69,7 @@
         <div class="row align-items-stretch no-gutters contact-wrap">
           <div class="col-md-6">
             <div class="form h-100">
-              <h3>Kontaktiraj nas</h3>
+              <h3>Contact us</h3>
               <form
                 class="mb-5"
                 method="post"
@@ -78,7 +78,7 @@
               >
                 <div class="row">
                   <div class="col-md-6 form-group mb-3">
-                    <label for="" class="col-form-label">Ime *</label>
+                    <label for="" class="col-form-label">Name *</label>
                     <input
                       onfocus="fokusiranje('name')"
                       onfocusout="fokusiranje('name', false)"
@@ -87,17 +87,17 @@
                       class="form-control"
                       name="name"
                       id="name"
-                      placeholder="Tvoje ime"
+                      placeholder="Your Name"
                     />
                     <ul class="req" id="nameReq">
-                      <li>Minimum 3 karaktera</li>
-                      <li>Maksimum 15 karaktera</li>
-                      <li>Prvo slovo mora biti veliko</li>
+                      <li>Minimum 3 characters</li>
+                      <li>Maximum 15 characters</li>
+                      <li>First letter must be uppercase</li>
                     </ul>
                     <div class="formError" id="nameErr"></div>
                   </div>
                   <div class="col-md-6 form-group mb-3">
-                    <label for="" class="col-form-label">Prezime *</label>
+                    <label for="" class="col-form-label">Surname *</label>
                     <input
                       onfocus="fokusiranje('surname')"
                       onfocusout="fokusiranje('surname', false)"
@@ -106,12 +106,12 @@
                       class="form-control"
                       name="surname"
                       id="prezime"
-                      placeholder="Tvoje prezime"
+                      placeholder="Your Surname"
                     />
                     <ul class="req" id="surnameReq">
-                      <li>Minimum 4 karaktera</li>
-                      <li>Maksimum 20 karaktera</li>
-                      <li>Prvo slovo mora biti veliko</li>
+                      <li>Minimum 4 characters</li>
+                      <li>Maximum 20 characters</li>
+                      <li>First letter must be uppercase</li>
                     </ul>
                     <div class="formError" id="surnameErr"></div>
                   </div>
@@ -130,15 +130,17 @@
                       placeholder="Email"
                     />
                     <ul class="req" id="emailReq">
-                      <li>Mora sadrzati @</li>
-                      <li>Mora biti formatu example@domain.com</li>
+                      <li>Must contain @</li>
+                      <li>Must be in format example@domain.com</li>
                     </ul>
                     <div class="formError" id="emailErr"></div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-12 form-group mb-3">
-                    <label for="message" class="col-form-label">Poruka *</label>
+                    <label for="message" class="col-form-label"
+                      >Message *</label
+                    >
                     <textarea
                       onfocus="fokusiranje('message')"
                       onfocusout="fokusiranje('message', false)"
@@ -147,15 +149,15 @@
                       id="message"
                       cols="30"
                       rows="4"
-                      placeholder="Napisi poruku"
+                      placeholder="Write message"
                     ></textarea>
                     <div id="the-count">
                       <span id="current">0</span>
                       <span id="maximum">/ 1000</span>
                     </div>
                     <ul class="req" id="messageReq">
-                      <li>Minimum 30 karaktera</li>
-                      <li>Maksimum 1000 karaktera</li>
+                      <li>Minimum 30 characters</li>
+                      <li>Maximum 1000 characters</li>
                     </ul>
                     <div class="formError" id="messageErr"></div>
                   </div>
@@ -165,7 +167,7 @@
                     <input
                       id="submit"
                       type="submit"
-                      value="Posalji poruku"
+                      value="Send message"
                       class="btn rounded py-2 px-4"
                     />
                   </div>
