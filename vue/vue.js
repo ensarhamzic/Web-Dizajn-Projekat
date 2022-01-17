@@ -1,3 +1,4 @@
+console.log(document.title);
 const app = Vue.createApp({
   data() {
     return {
@@ -91,7 +92,7 @@ app.component("member", {
       
     </ul>
     <button @click="toggleDetails()">
-      {{ detailsAreVisible ? 'Sakrij' : 'Prikaži' }} detalje
+      {{ detailsAreVisible ? (title == 'Our team' ? 'Hide' : 'Sakrij') : (title == 'Our team' ? 'Show' : 'Prikaži') }}  {{ title == 'Our team' ? 'details' : 'detalje' }}
     </button>
     
   </li>
@@ -99,6 +100,7 @@ app.component("member", {
   data() {
     return {
       detailsAreVisible: false,
+      title: document.title,
     };
   },
 
