@@ -191,6 +191,7 @@ nav {
 }
 
 #thanks {
+  border-radius: 15px;
   background: rgb(116, 238, 116);
   padding: 100px;
   margin: 0 auto;

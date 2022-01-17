@@ -2,33 +2,33 @@ console.log(document.title);
 const app = Vue.createApp({
   data() {
     return {
-      friends: [
+      members: [
         {
           id: "1",
           name: "Clark Petersen",
           phone: "066/154-14-87",
-          email: "clarkpetersen@gmail.com",
+          email: "petersen@gmail.com",
           image: "https://i.pravatar.cc/300?img=60",
         },
         {
           id: "2",
           name: "James Nelson",
           phone: "063/124-48-72",
-          email: "jamesnelson@gmail.com",
+          email: "nelson@gmail.com",
           image: "https://i.pravatar.cc/300?img=59",
         },
         {
           id: "3",
           name: "Joe Davis",
           phone: "061/148-55-67",
-          email: "joedavis@gmail.com",
+          email: "davis@gmail.com",
           image: "https://i.pravatar.cc/300?img=53",
         },
         {
           id: "4",
           name: "David Olson",
           phone: "065/177-99-25",
-          email: "davidolson@yahoo.com",
+          email: "olson@yahoo.com",
           image: "https://i.pravatar.cc/300?img=14",
         },
       ],
