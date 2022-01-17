@@ -10,34 +10,64 @@
     />
     <link rel="stylesheet" href="../css/all.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/vue@next" defer></script>
     <script src="vue.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1>Naš tim</h1>
-    </header>
+    <nav>
+      <div class=".left"><h1>ProgrammingTeam</h1></div>
+    </nav>
     <section id="app">
-      <ul>
+      <div class="header">
+        <h1>Upoznaj naš tim</h1>
+      </div>
+      <ul id="clanovi">
         <member
           v-for="friend in friends"
           :key="friend.id"
           :name="friend.name"
           :phone="friend.phone"
           :email="friend.email"
+          :image="friend.image"
         ></member>
       </ul>
 
       <div id="donate">
-        <h2>Podrži naš rad</h2>
-        <button v-on:click="add(1)">+1$</button>
-        <button v-on:click="add(10)">+10$</button>
-        <button v-on:click="add(100)">+100$</button>
-        <button v-on:click="reduce(1)">-1$</button>
-        <button v-on:click="reduce(10)">-10$</button>
-        <button v-on:click="reduce(100)">-100$</button>
-        <p>Result: {{ counter }}</p>
-        <button v-on:click="donate()">Doniraj</button>
+        <div class="header">
+          <h1>Podrži naš rad</h1>
+        </div>
+        <div class="donate-inner">
+          <div class="buttons">
+            <div class="greenDiv">
+              <button class="green" v-on:click="add(1)">+1$</button>
+              <button class="green" v-on:click="add(10)">+10$</button>
+              <button class="green" v-on:click="add(100)">+100$</button>
+            </div>
+
+            <div class="redDiv">
+              <button class="red" v-on:click="reduce(1)">-1$</button>
+              <button class="red" v-on:click="reduce(10)">-10$</button>
+              <button class="red" v-on:click="reduce(100)">-100$</button>
+            </div>
+          </div>
+          <p id="iznosText">Iznos za donaciju:</p>
+          <p id="iznos"><span>{{ counter }}</span>$</p>
+          <button v-if="donateVisible" id="donateBtn" v-on:click="donate()">
+            Doniraj
+          </button>
+        </div>
+      </div>
+
+      <div v-if="thanks" id="thanks">
+        <h1>Hvala na donaciji od {{ counter }}$</h1>
       </div>
     </section>
   </body>
