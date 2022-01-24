@@ -458,6 +458,77 @@ footer a:hover {
   text-decoration: underline;
 }
 
+#banner_blog {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/blog/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  position: relative;
+}
+
+#content {
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+#content p {
+  color: rgb(68, 68, 68);
+}
+
+#content a:link {
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+#content a:hover {
+  text-decoration: underline;
+}
+
+#content img:hover,
+#content #image:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#content h3 {
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+#content h3:hover {
+  cursor: pointer;
+  color: rgb(66, 66, 66);
+  text-decoration: underline;
+}
+
+#content #first #image {
+  background: url(../images/blog/article1.jpg);
+  height: 500px;
+  background-position: center;
+}
+
+.holder > div {
+  width: 550px;
+}
+
+.holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+.holder img {
+  width: 100%;
+}
+
+.darkBlog p,
+.darkBlog a {
+  color: white !important;
+}
+
 @media only screen and (max-width: 1999px) {
   .flip-card {
     margin-top: 30px;
@@ -472,7 +543,7 @@ footer a:hover {
   }
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+@media only screen and (min-width: 1050px) and (max-width: 1500px) {
   .navbar {
     display: block !important;
   }
@@ -519,7 +590,8 @@ footer a:hover {
 
   #banner_critical,
   #banner_endangered,
-  #banner_vulnerable {
+  #banner_vulnerable,
+  #banner_blog {
     height: 600px;
   }
 }
@@ -551,7 +623,8 @@ footer a:hover {
 
   #banner_critical,
   #banner_endangered,
-  #banner_vulnerable {
+  #banner_vulnerable,
+  #banner_blog {
     height: 500px;
   }
 
@@ -598,7 +671,8 @@ footer a:hover {
 
   #banner_critical,
   #banner_endangered,
-  #banner_vulnerable {
+  #banner_vulnerable,
+  #banner_blog {
     height: 400px;
   }
 

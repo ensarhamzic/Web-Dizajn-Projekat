@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>Endangered species</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/noframework.waypoints.min.js"></script>
+    <script src="js/blog.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl navbar-light">
+      <a class="navbar-brand" href="index.html">
+        <div id="logoDiv">
+          <img src="images/logo.png" alt="Endangered Species" />
+          <h1>Endangered Species</h1>
+        </div>
+      </a>
+      <button
+        class="navbar-toggler"
+        id="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+        aria-controls="navbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Početna</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kriticno-ugrozene.html"
+              >Kritično ugrožene</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ugrozene.html">Ugrožene</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ranjive.html">Ranjive</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog-en.html"><b>SR</b>/EN</a>
+          </li>
+          <li class="nav-item" id="theme">
+            <a class="nav-link" href="#"><i class="fas fa-moon"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="banner_blog">
+      <div class="headline" id="headline_home">
+        <h2>Edukacija o životinjama</h2>
+        <button id="readMoreBtn">
+          Vidi naše najnovije članke&nbsp;&nbsp;&nbsp;<i
+            class="fas fa-angle-double-down"
+          ></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="content">
+      <div id="first">
+        <div id="image"></div>
+        <h3>Životinje koje će izumreti u 2022.</h3>
+        <p>
+          Stručnjaci predviđaju da će do kraja 2022. godine, najmanje 3
+          životinjske vrste potpuno nestati. Klimatske promene, globalno
+          zagrevanje i ostale ekološke promene dovode do sve težeg opstajanja
+          nekih životinjskih vrsta
+          <a href="javascript:void(0)">Pročitaj više</a>
+        </p>
+      </div>
+      <hr />
+      <div class="holder">
+        <div id="second" class="kartica">
+          <img src="images/blog/article2.jpg" alt="" />
+          <h3>Da li životinje prenose COVID-19</h3>
+          <p>
+            Naučnici sa Oksfordskog univerziteta pratili su mogućnost da li
+            određene vrste životinja (primarno kućni ljubimci) mogu preneti
+            novootkriveni virus SARS-COV-2.
+            <a href="javascript:void(0)">Pročitaj više</a>
+          </p>
+        </div>
+        <div id="third" class="kartica">
+          <img src="images/blog/article3.jpg" alt="" />
+          <h3>Bez kojih životinja bi život bio ugrožen?</h3>
+          <p>
+            Životinje igraju veliku ulogu u ljudskom životu. Neke su čak toliko
+            bitne da bi ljudski život bez njih bio jako otežan.
+            <a href="javascript:void(0)">Pročitaj više</a>
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="holder">
+        <div id="second" class="kartica">
+          <img src="images/blog/article4.jpg" alt="" />
+          <h3>STOP divljem lovu!</h3>
+          <p>
+            Divlji lov je jedna od velikih opasnosti po životinje uopšte, a
+            posebno one koje su ugrožene. Stoga se moraju preduzeti mere i
+            adekvatno kazniti osobe koje se bave nedozvoljenim lovom.
+            <a href="javascript:void(0)">Pročitaj više</a>
+          </p>
+        </div>
+        <div id="third" class="kartica">
+          <img src="images/blog/article5.jpg" alt="" />
+          <h3>10 najopasnijih životinja Australije</h3>
+          <p>
+            Australija je poznata po velikom broju životinjskih vrsta kojiih
+            nema u drugim delovima sveta. Saznajte koje predstavljaju najveću
+            opasnost. I ne, nisu pauci.
+            <a href="javascript:void(0)">Pročitaj više</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div id="social">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+      <div>
+        <p>
+          Endangered Species &copy;
+          <a href="vue/nas-tim.html">Copyright 2022</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
