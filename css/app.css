@@ -507,6 +507,12 @@ footer a:hover {
   background: url(../images/blog/article1.jpg);
   height: 500px;
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#content {
+  padding: 15px;
 }
 
 .holder > div {
